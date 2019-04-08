@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFrameworks>net461;netcoreapp2.1</TargetFrameworks>
     <Company>Smock</Company>
     <Product>SmockAspNetLib</Product>
     <Authors>Smock</Authors>
@@ -9,6 +9,12 @@
     <Copyright />
     <PackageLicenseUrl>https://github.com/smockgithub/SmockAspNetLib/blob/master/LICENSE</PackageLicenseUrl>
     <PackageId>SmockAspNetLib</PackageId>
+    <Description>smock的一些常用基础库1</Description>
+    <PackageReleaseNotes>smock的一些常用基础库2</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/smockgithub/SmockAspNetLib</RepositoryUrl>
+    <FileVersion>1.0.0.1</FileVersion>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

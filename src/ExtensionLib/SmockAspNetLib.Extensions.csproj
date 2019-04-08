@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>SmockAspNetLib.Extensions</AssemblyName>
+    <RootNamespace>SmockAspNetLib.Extensions</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Smock</Authors>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageId>Smock.Lib.Extensions</PackageId>
+    <Version>1.0.2</Version>
+    <PackageLicenseUrl>http://www.wabaoge.com</PackageLicenseUrl>
+    <Copyright>wabaoge</Copyright>
+  </PropertyGroup>
+
+</Project>

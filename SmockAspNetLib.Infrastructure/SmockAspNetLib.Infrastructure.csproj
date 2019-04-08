@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <Company>Smock</Company>
+    <Product>SmockAspNetLib</Product>
+    <Authors>Smock</Authors>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Copyright />
+    <PackageLicenseUrl>https://github.com/smockgithub/SmockAspNetLib/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageId>SmockAspNetLib</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

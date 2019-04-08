@@ -9,8 +9,8 @@
     <Copyright />
     <PackageLicenseUrl>https://github.com/smockgithub/SmockAspNetLib/blob/master/LICENSE</PackageLicenseUrl>
     <PackageId>SmockAspNetLib</PackageId>
-    <Description>smock的一些常用基础库1</Description>
-    <PackageReleaseNotes>smock的一些常用基础库2</PackageReleaseNotes>
+    <Description>smock的一些常用基础库</Description>
+    <PackageReleaseNotes>增加了.NET461和CORE2.1的支持</PackageReleaseNotes>
     <RepositoryUrl>https://github.com/smockgithub/SmockAspNetLib</RepositoryUrl>
     <FileVersion>1.0.0.1</FileVersion>
     <AssemblyVersion>1.0.0.1</AssemblyVersion>

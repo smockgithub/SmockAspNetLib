@@ -13,22 +13,50 @@ namespace SmockAspNetLib.Infrastructure.Utilities
         private static Dictionary<string, string> _DictVerValidNumber = new Dictionary<string, string>();
         private static Dictionary<string, DateTime> _DictVerTime = new Dictionary<string, DateTime>();
 
-        private static char[] constant =
+        private static string constantNumber = "0123456789";
+        private static string constantLower = "abcdefghijklmnopqrstuvwxyz";
+        private static string constantUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+        /// <summary>
+        /// 生成随机数
+        /// </summary>
+        /// <param name="Length"></param>
+        /// <param name="constantType">OnlyNumber = 1,OnlyLower = 2,OnlyUpper = 3,NumberAndLower = 4,LowerAndUpper = 5,NumberAndLowerAndUpper = 6,</param>
+        /// <returns></returns>
+        public static string GenerateRandomNumber(int Length, int constantType = 6)
         {
-        '0','1','2','3','4','5','6','7','8','9',
-        'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
-        'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'
-        };
-        public static string GenerateRandomNumber(int Length)
-        {
-            System.Text.StringBuilder newRandom = new System.Text.StringBuilder(62);
+
+            string constantStr = "";
+
+            switch (constantType)
+            {
+                case 1:
+                    constantStr = constantNumber; break;
+                case 2:
+                    constantStr = constantLower; break;
+                case 3:
+                    constantStr = constantUpper; break;
+                case 4:
+                    constantStr = constantNumber + constantLower; break;
+                case 5:
+                    constantStr = constantLower + constantUpper; break;
+
+                default:
+                    constantStr = constantNumber + constantLower + constantUpper;
+                    break;
+            }
+
+            char[] constant = constantStr.ToCharArray();
+
+            System.Text.StringBuilder newRandom = new System.Text.StringBuilder(constant.Length);
             Random rd = new Random();
             for (int i = 0; i < Length; i++)
             {
-                newRandom.Append(constant[rd.Next(62)]);
+                newRandom.Append(constant[rd.Next(constant.Length)]);
             }
             return newRandom.ToString();
         }
+
         public static string GetValidNumber(string strLoginName)
         {
             string strKey = System.Convert.ToString(GenerateRandomNumber(4));

@@ -10,12 +10,12 @@
     <PackageLicenseUrl>https://github.com/smockgithub/SmockAspNetLib/blob/master/LICENSE</PackageLicenseUrl>
     <PackageId>SmockAspNetLib</PackageId>
     <Description>smock的一些常用基础库</Description>
-    <PackageReleaseNotes>增加了.NET461和CORE2.1的支持</PackageReleaseNotes>
+    <PackageReleaseNotes>增加了datetimetonuix</PackageReleaseNotes>
     <RepositoryUrl>https://github.com/smockgithub/SmockAspNetLib</RepositoryUrl>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <FileVersion>1.0.0.2</FileVersion>
     <AssemblyVersion>1.0.0.2</AssemblyVersion>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
   </PropertyGroup>
 

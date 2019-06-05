@@ -7,4 +7,8 @@
     <RootNamespace>Samples.Sample1</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SmockAspNetLib.Infrastructure\SmockAspNetLib.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -13,9 +13,9 @@
     <PackageReleaseNotes>增加了datetimetonuix</PackageReleaseNotes>
     <RepositoryUrl>https://github.com/smockgithub/SmockAspNetLib</RepositoryUrl>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <FileVersion>1.0.0.2</FileVersion>
-    <AssemblyVersion>1.0.0.2</AssemblyVersion>
-    <Version>1.0.3</Version>
+    <FileVersion>1.0.5.0</FileVersion>
+    <AssemblyVersion>1.0.5.0</AssemblyVersion>
+    <Version>1.0.5</Version>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
   </PropertyGroup>
 

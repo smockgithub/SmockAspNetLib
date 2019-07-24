@@ -50,6 +50,23 @@ namespace SmockAspNetLib.Infrastructure.Extensions
             return value.As<DateTime>();
         }
 
+        public static DateTime AsUtcDateTimeByBeiJingTimeZone(this string value)
+        {
+            var dateTime = value.As<DateTime>();
+            if(dateTime.Year==1&& dateTime.Month==1&& dateTime.Day == 1)
+            {
+                throw new Exception("输入的时间格式不正确。");
+            }
+            return DateTimeExtensions.AsChangeTimeZoneToUtc(dateTime.AddHours(-8));
+        }
+
+        public static DateTime AsUtcDateTimeByBeiJingTimeZone(this string value, DateTime defaultValu)
+        {
+            var dateTime = value.As<DateTime>(defaultValu);
+
+            return DateTimeExtensions.AsChangeTimeZoneToUtc(dateTime.AddHours(-8));
+        }
+
         public static DateTime AsDateTime(this string value, DateTime defaultValue)
         {
             return value.As<DateTime>(defaultValue);

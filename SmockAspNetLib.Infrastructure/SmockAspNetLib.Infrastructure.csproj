@@ -7,16 +7,17 @@
     <Authors>Smock</Authors>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Copyright />
-    <PackageLicenseUrl>https://github.com/smockgithub/SmockAspNetLib/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
     <PackageId>SmockAspNetLib</PackageId>
     <Description>smock的一些常用基础库</Description>
-    <PackageReleaseNotes>增加了datetimetonuix</PackageReleaseNotes>
+    <PackageReleaseNotes>增加了JdAnalyzeUtility，实现对UnionTag统一处理</PackageReleaseNotes>
     <RepositoryUrl>https://github.com/smockgithub/SmockAspNetLib</RepositoryUrl>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <FileVersion>1.0.5.0</FileVersion>
-    <AssemblyVersion>1.0.5.0</AssemblyVersion>
-    <Version>1.0.5</Version>
+    <FileVersion>1.0.6.0</FileVersion>
+    <AssemblyVersion>1.0.6.0</AssemblyVersion>
+    <Version>1.0.6</Version>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net461|AnyCPU'">

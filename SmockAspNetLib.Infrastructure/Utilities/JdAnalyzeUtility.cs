@@ -6,16 +6,21 @@ using System.Threading.Tasks;
 
 namespace SmockAspNetLib.Infrastructure.Utilities
 {
-    public class JdAnalyzeUtility
+    public class JdUnionUtility
     {
-        public static JdAnalyzeUtility_UnionTag GetUnionTag(string unionTag)
+        /// <summary>
+        /// 分析联盟UnionTag，返回解析后的意思
+        /// </summary>
+        /// <param name="unionTag">传入8位或16位的ut码</param>
+        /// <returns></returns>
+        public static JdUnionUtility_UnionTag AnalyzeUnionTag(string unionTag)
         {
             if (unionTag == null)
                 throw new Exception("unionTag not be null");
 
             var chars = unionTag.Reverse().ToArray();//翻转
 
-            var result = new JdAnalyzeUtility_UnionTag();
+            var result = new JdUnionUtility_UnionTag();
 
             if (chars.Length == 8)
             {
@@ -43,7 +48,7 @@ namespace SmockAspNetLib.Infrastructure.Utilities
         }
     }
 
-    public class JdAnalyzeUtility_UnionTag
+    public class JdUnionUtility_UnionTag
     {
         /// <summary>
         /// 红包

@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net461;netcoreapp2.1</TargetFrameworks>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
     <Company>Smock</Company>
     <Product>SmockAspNetLib</Product>
     <Authors>Smock</Authors>
@@ -10,12 +10,12 @@
     <PackageLicenseUrl></PackageLicenseUrl>
     <PackageId>SmockAspNetLib</PackageId>
     <Description>smock的一些常用基础库</Description>
-    <PackageReleaseNotes>更新对UnionTag统一处理</PackageReleaseNotes>
+    <PackageReleaseNotes>支持3.0</PackageReleaseNotes>
     <RepositoryUrl>https://github.com/smockgithub/SmockAspNetLib</RepositoryUrl>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <FileVersion>1.0.7.0</FileVersion>
-    <AssemblyVersion>1.0.7.0</AssemblyVersion>
-    <Version>1.0.7</Version>
+    <FileVersion>1.0.8.0</FileVersion>
+    <AssemblyVersion>1.0.8.0</AssemblyVersion>
+    <Version>1.0.8</Version>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>

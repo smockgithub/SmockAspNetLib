@@ -9,11 +9,11 @@ namespace Tests
     public class JdAnalyzeUtilityTest1
     {
         [Theory]
-        [InlineData("00011000")]
+        [InlineData("0000000000011000")]
         //[InlineData("abc", Skip = "跳过测试")]
         public void Test_JdAnalyzeUtility(string value)
         {
-            var TestResult = JdAnalyzeUtility.GetUnionTag(value);
+            var TestResult = JdUnionUtility.AnalyzeUnionTag(value);
 
             //int a = 1;
             //a.AA();

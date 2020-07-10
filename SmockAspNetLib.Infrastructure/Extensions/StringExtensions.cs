@@ -53,7 +53,7 @@ namespace SmockAspNetLib.Infrastructure.Extensions
         public static DateTime AsUtcDateTimeByBeiJingTimeZone(this string value)
         {
             var dateTime = value.As<DateTime>();
-            if(dateTime.Year==1&& dateTime.Month==1&& dateTime.Day == 1)
+            if (dateTime.Year == 1 && dateTime.Month == 1 && dateTime.Day == 1)
             {
                 throw new Exception("输入的时间格式不正确。");
             }
@@ -136,6 +136,27 @@ namespace SmockAspNetLib.Infrastructure.Extensions
         public static bool IsInt(this string value)
         {
             return value.Is<int>();
+        }
+
+        /// <summary>
+        /// 脱敏
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="left">左边保留几位</param>
+        /// <param name="right">右边保留几位</param>
+        /// <returns></returns>
+        public static string ToDesensitization(this string value, int left, int right)
+        {
+            if (value.Length <= left + right)
+            {
+                return value;
+            }
+            else
+            {
+                string result = value.Substring(0, left) + new string('*', value.Length - left - right) + value.Substring(0, right);
+
+                return result;
+            }
         }
     }
 }

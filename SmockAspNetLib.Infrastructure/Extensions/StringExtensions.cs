@@ -153,7 +153,7 @@ namespace SmockAspNetLib.Infrastructure.Extensions
             }
             else
             {
-                string result = value.Substring(0, left) + new string('*', value.Length - left - right) + value.Substring(0, right);
+                string result = value.Substring(0, left) + new string('*', value.Length - left - right) + value.Substring(value.Length - right, right);
 
                 return result;
             }
